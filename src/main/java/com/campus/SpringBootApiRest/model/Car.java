@@ -1,8 +1,16 @@
 package com.campus.SpringBootApiRest.model;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
+@Entity
 public class Car {
 
+    @Id
+    @GeneratedValue
     private int id;
+
     private String model;
     private String marque;
     private String color;
